@@ -102,9 +102,7 @@ run;
 proc print data=work.kept_dropped noobs;
 run;
 
-/*--------------------------------------------------------------
-Close PDF
---------------------------------------------------------------*/
 ods pdf close;
 ods graphics off;
 title;
+
