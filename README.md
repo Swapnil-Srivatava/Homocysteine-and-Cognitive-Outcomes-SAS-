@@ -1,4 +1,12 @@
 # Homocysteine-and-Cognitive-Outcomes-SAS-
+## TL;DR
+- End-to-end SAS analysis evaluating homocysteine and cognitive outcomes
+- Clinical-style data preparation using PROC SQL and derived analysis flags
+- Confounding and effect modification assessed using regression modeling
+- Age identified as a major confounder; homocysteine effect attenuated after adjustment
+- Variable selection compared using traditional regression vs LASSO
+- Designed to mirror observational clinical / epidemiologic workflows
+
 **Project Overview**
 
 Cognitive decline in older adults is influenced by a combination of demographic, behavioral, and biochemical factors. Elevated plasma homocysteine has been proposed as a potential biomarker for impaired cognition, but its independent association remains unclear when key confounders are considered.
@@ -13,6 +21,7 @@ This project evaluates the relationship between plasma homocysteine levels and c
 * Assess effect modification by sex
 * Examine confounding through multivariable adjustment
 * Compare traditional regression modeling with LASSO-based variable selection
+
 
 **Data Description**
 
