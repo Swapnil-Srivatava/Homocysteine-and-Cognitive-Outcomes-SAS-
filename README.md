@@ -22,6 +22,37 @@ This project evaluates the relationship between plasma homocysteine levels and c
 * Examine confounding through multivariable adjustment
 * Compare traditional regression modeling with LASSO-based variable selection
 
+## Repository Structure
+
+### SAS Programs (run in order)
+- `01_data_prep.sas`  
+  Imports/merges source tables, cleans data, applies exclusion flags, and outputs an analysis-ready dataset.
+
+- `02_derived_variables.sas`  
+  Creates derived variables (e.g., transformed biomarkers, categorical covariates) used for modeling.
+
+- `03_descriptive_analysis.sas`  
+  Produces descriptive statistics and exploratory summaries.
+- `03_descriptive_analysis.pdf`  
+  Output report from descriptive analyses.
+
+- `04_modeling.sas`  
+  Runs crude and multivariable regression models, confounding checks, interaction tests, and diagnostics.
+- `04_modeling.pdf`  
+  Output report from modeling and diagnostics.
+
+- `05_model_selection.sas`  
+  Performs variable selection using `PROC GLMSELECT` (LASSO, SBC) and compares selected vs full models.
+- `05_model_selection.pdf`  
+  Output report from model selection results.
+
+### Documentation
+- `Analysis_plan.docx`  
+  Study-style analysis plan describing objectives, variables, and modeling strategy.
+- `Data_Dictionary.docx`  
+  Variable-level definitions, coding, and derivation notes.
+
+
 
 **Data Description**
 
